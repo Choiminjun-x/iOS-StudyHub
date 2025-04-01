@@ -6,30 +6,23 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B0F423442D9C2597009AF119 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0F4233B2D9C2597009AF119 /* Assets.xcassets */; };
+		B0F423462D9C2597009AF119 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0F4233E2D9C2597009AF119 /* LaunchScreen.storyboard */; };
+		B0F423482D9C2597009AF119 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F4233A2D9C2597009AF119 /* AppDelegate.swift */; };
+		B0F423492D9C2597009AF119 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F423412D9C2597009AF119 /* SceneDelegate.swift */; };
+		B0F4234D2D9C25E9009AF119 /* BannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F4234B2D9C25E9009AF119 /* BannerViewController.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		B0F423222D9C2584009AF119 /* iOS-StudyHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-StudyHub.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0F4233A2D9C2597009AF119 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B0F4233B2D9C2597009AF119 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B0F4233C2D9C2597009AF119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0F4233D2D9C2597009AF119 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B0F423412D9C2597009AF119 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B0F4234B2D9C25E9009AF119 /* BannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		B0F423342D9C2587009AF119 /* Exceptions for "iOS-StudyHub" folder in "iOS-StudyHub" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = B0F423212D9C2584009AF119 /* iOS-StudyHub */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		B0F423242D9C2584009AF119 /* iOS-StudyHub */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				B0F423342D9C2587009AF119 /* Exceptions for "iOS-StudyHub" folder in "iOS-StudyHub" target */,
-			);
-			path = "iOS-StudyHub";
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B0F4231F2D9C2584009AF119 /* Frameworks */ = {
@@ -45,7 +38,7 @@
 		B0F423192D9C2584009AF119 = {
 			isa = PBXGroup;
 			children = (
-				B0F423242D9C2584009AF119 /* iOS-StudyHub */,
+				B0F423432D9C2597009AF119 /* iOS-StudyHub */,
 				B0F423232D9C2584009AF119 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +49,27 @@
 				B0F423222D9C2584009AF119 /* iOS-StudyHub.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B0F423432D9C2597009AF119 /* iOS-StudyHub */ = {
+			isa = PBXGroup;
+			children = (
+				B0F4234C2D9C25E9009AF119 /* InfiniteRollingBanner */,
+				B0F4233B2D9C2597009AF119 /* Assets.xcassets */,
+				B0F4233C2D9C2597009AF119 /* Info.plist */,
+				B0F4233E2D9C2597009AF119 /* LaunchScreen.storyboard */,
+				B0F423412D9C2597009AF119 /* SceneDelegate.swift */,
+				B0F4233A2D9C2597009AF119 /* AppDelegate.swift */,
+			);
+			path = "iOS-StudyHub";
+			sourceTree = "<group>";
+		};
+		B0F4234C2D9C25E9009AF119 /* InfiniteRollingBanner */ = {
+			isa = PBXGroup;
+			children = (
+				B0F4234B2D9C25E9009AF119 /* BannerViewController.swift */,
+			);
+			path = InfiniteRollingBanner;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -72,9 +86,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				B0F423242D9C2584009AF119 /* iOS-StudyHub */,
 			);
 			name = "iOS-StudyHub";
 			packageProductDependencies = (
@@ -122,6 +133,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0F423442D9C2597009AF119 /* Assets.xcassets in Resources */,
+				B0F423462D9C2597009AF119 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,10 +145,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0F423482D9C2597009AF119 /* AppDelegate.swift in Sources */,
+				B0F423492D9C2597009AF119 /* SceneDelegate.swift in Sources */,
+				B0F4234D2D9C25E9009AF119 /* BannerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B0F4233E2D9C2597009AF119 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0F4233D2D9C2597009AF119 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B0F423362D9C2587009AF119 /* Debug */ = {
@@ -150,9 +177,9 @@
 				INFOPLIST_FILE = "iOS-StudyHub/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -178,9 +205,9 @@
 				INFOPLIST_FILE = "iOS-StudyHub/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
