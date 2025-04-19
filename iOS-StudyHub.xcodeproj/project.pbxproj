@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B04656F82DAA98C600F1AAAA /* Bulider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04656F72DAA98C600F1AAAA /* Bulider.swift */; };
 		B0E700692DA10DB200206106 /* BarcodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0E700672DA10DB200206106 /* BarcodeViewController.xib */; };
 		B0E7006A2DA10DB200206106 /* BarcodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E700662DA10DB200206106 /* BarcodeViewController.swift */; };
+		B0E7006D2DA153A300206106 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E7006B2DA153A300206106 /* ScrollViewController.swift */; };
+		B0E7006E2DA153A300206106 /* ScrollViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0E7006C2DA153A300206106 /* ScrollViewController.xib */; };
 		B0F423442D9C2597009AF119 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0F4233B2D9C2597009AF119 /* Assets.xcassets */; };
 		B0F423462D9C2597009AF119 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0F4233E2D9C2597009AF119 /* LaunchScreen.storyboard */; };
 		B0F423482D9C2597009AF119 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F4233A2D9C2597009AF119 /* AppDelegate.swift */; };
@@ -17,8 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B04656F72DAA98C600F1AAAA /* Bulider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bulider.swift; sourceTree = "<group>"; };
 		B0E700662DA10DB200206106 /* BarcodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeViewController.swift; sourceTree = "<group>"; };
 		B0E700672DA10DB200206106 /* BarcodeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BarcodeViewController.xib; sourceTree = "<group>"; };
+		B0E7006B2DA153A300206106 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
+		B0E7006C2DA153A300206106 /* ScrollViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScrollViewController.xib; sourceTree = "<group>"; };
 		B0F423222D9C2584009AF119 /* iOS-StudyHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-StudyHub.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0F4233A2D9C2597009AF119 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0F4233B2D9C2597009AF119 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -39,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B04656F62DAA98A300F1AAAA /* @resultBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				B04656F72DAA98C600F1AAAA /* Bulider.swift */,
+			);
+			path = "@resultBuilder";
+			sourceTree = "<group>";
+		};
 		B0E700682DA10DB200206106 /* AVFoundation-Barcode */ = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +81,7 @@
 		B0F423432D9C2597009AF119 /* iOS-StudyHub */ = {
 			isa = PBXGroup;
 			children = (
+				B04656F62DAA98A300F1AAAA /* @resultBuilder */,
 				B0F4234C2D9C25E9009AF119 /* InfiniteRollingBanner */,
 				B0E700682DA10DB200206106 /* AVFoundation-Barcode */,
 				B0F4233B2D9C2597009AF119 /* Assets.xcassets */,
@@ -74,6 +89,8 @@
 				B0F4233E2D9C2597009AF119 /* LaunchScreen.storyboard */,
 				B0F423412D9C2597009AF119 /* SceneDelegate.swift */,
 				B0F4233A2D9C2597009AF119 /* AppDelegate.swift */,
+				B0E7006B2DA153A300206106 /* ScrollViewController.swift */,
+				B0E7006C2DA153A300206106 /* ScrollViewController.xib */,
 			);
 			path = "iOS-StudyHub";
 			sourceTree = "<group>";
@@ -150,6 +167,7 @@
 				B0F423442D9C2597009AF119 /* Assets.xcassets in Resources */,
 				B0E700692DA10DB200206106 /* BarcodeViewController.xib in Resources */,
 				B0F423462D9C2597009AF119 /* LaunchScreen.storyboard in Resources */,
+				B0E7006E2DA153A300206106 /* ScrollViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,6 +180,8 @@
 			files = (
 				B0F423482D9C2597009AF119 /* AppDelegate.swift in Sources */,
 				B0E7006A2DA10DB200206106 /* BarcodeViewController.swift in Sources */,
+				B0E7006D2DA153A300206106 /* ScrollViewController.swift in Sources */,
+				B04656F82DAA98C600F1AAAA /* Bulider.swift in Sources */,
 				B0F423492D9C2597009AF119 /* SceneDelegate.swift in Sources */,
 				B0F4234D2D9C25E9009AF119 /* BannerViewController.swift in Sources */,
 			);
@@ -201,7 +221,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.DevChoi.iOS-StudyHub";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mjchoi.iOS-StudyHub";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -229,7 +249,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.DevChoi.iOS-StudyHub";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mjchoi.iOS-StudyHub";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
