@@ -10,12 +10,12 @@ import UIKit
 extension UIImageView {
     
     func setImage(from url: URL, placeholder: UIImage? = nil) {
-//          self.image = placeholder
-//          ImageCacheManager.shared.image(for: url) { [weak self] image in
-//              DispatchQueue.main.async {
-//                  self?.image = image
-//              }
-//          }
-//        ImageCacheManager.shared.dumpAllKeys()
+          self.image = placeholder
+          ImageCacheManager.shared.image(for: url) { [weak self] image in
+              DispatchQueue.main.async {
+                  self?.image = image
+              }
+          }
+        ImageCacheManager.shared.dumpAllKeys()
       }
 }

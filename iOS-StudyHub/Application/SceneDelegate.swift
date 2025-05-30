@@ -16,7 +16,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = BarcodeViewController()
+        window?.rootViewController = ImageCacheTestViewController()
         window?.makeKeyAndVisible()
         window?.windowScene = windowScene
     }

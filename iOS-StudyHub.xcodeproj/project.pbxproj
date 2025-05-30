@@ -13,6 +13,9 @@
 		B06EF8302DE9A5FE00AD6051 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06EF82D2DE9A5FE00AD6051 /* UIImageView+Extension.swift */; };
 		B06EF8312DE9A5FE00AD6051 /* +Sets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06EF82A2DE9A5FE00AD6051 /* +Sets.swift */; };
 		B06EF8322DE9A5FE00AD6051 /* Sets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06EF82B2DE9A5FE00AD6051 /* Sets.swift */; };
+		B06EF8372DE9A6EF00AD6051 /* ImageCacheTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B06EF8352DE9A6EF00AD6051 /* ImageCacheTestViewController.xib */; };
+		B06EF8382DE9A6EF00AD6051 /* ImageCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06EF8332DE9A6EF00AD6051 /* ImageCacheManager.swift */; };
+		B06EF8392DE9A6EF00AD6051 /* ImageCacheTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06EF8342DE9A6EF00AD6051 /* ImageCacheTestViewController.swift */; };
 		B0E700692DA10DB200206106 /* BarcodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0E700672DA10DB200206106 /* BarcodeViewController.xib */; };
 		B0E7006A2DA10DB200206106 /* BarcodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E700662DA10DB200206106 /* BarcodeViewController.swift */; };
 		B0F423442D9C2597009AF119 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0F4233B2D9C2597009AF119 /* Assets.xcassets */; };
@@ -30,6 +33,9 @@
 		B06EF82B2DE9A5FE00AD6051 /* Sets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sets.swift; sourceTree = "<group>"; };
 		B06EF82C2DE9A5FE00AD6051 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		B06EF82D2DE9A5FE00AD6051 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		B06EF8332DE9A6EF00AD6051 /* ImageCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheManager.swift; sourceTree = "<group>"; };
+		B06EF8342DE9A6EF00AD6051 /* ImageCacheTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheTestViewController.swift; sourceTree = "<group>"; };
+		B06EF8352DE9A6EF00AD6051 /* ImageCacheTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCacheTestViewController.xib; sourceTree = "<group>"; };
 		B0E700662DA10DB200206106 /* BarcodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeViewController.swift; sourceTree = "<group>"; };
 		B0E700672DA10DB200206106 /* BarcodeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BarcodeViewController.xib; sourceTree = "<group>"; };
 		B0F423222D9C2584009AF119 /* iOS-StudyHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-StudyHub.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +115,16 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		B06EF8362DE9A6EF00AD6051 /* URLSession+NSCache */ = {
+			isa = PBXGroup;
+			children = (
+				B06EF8332DE9A6EF00AD6051 /* ImageCacheManager.swift */,
+				B06EF8342DE9A6EF00AD6051 /* ImageCacheTestViewController.swift */,
+				B06EF8352DE9A6EF00AD6051 /* ImageCacheTestViewController.xib */,
+			);
+			path = "URLSession+NSCache";
+			sourceTree = "<group>";
+		};
 		B0E700682DA10DB200206106 /* AVFoundation-Barcode */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +159,7 @@
 				B04656F62DAA98A300F1AAAA /* @resultBuilder */,
 				B0F4234C2D9C25E9009AF119 /* InfiniteRollingBanner */,
 				B0E700682DA10DB200206106 /* AVFoundation-Barcode */,
+				B06EF8362DE9A6EF00AD6051 /* URLSession+NSCache */,
 				B06EF8292DE9A5E200AD6051 /* Resources */,
 				B06EF82E2DE9A5FE00AD6051 /* Utils */,
 			);
@@ -220,6 +237,7 @@
 			files = (
 				B0F423442D9C2597009AF119 /* Assets.xcassets in Resources */,
 				B0E700692DA10DB200206106 /* BarcodeViewController.xib in Resources */,
+				B06EF8372DE9A6EF00AD6051 /* ImageCacheTestViewController.xib in Resources */,
 				B0F423462D9C2597009AF119 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +298,8 @@
 				B0F4234D2D9C25E9009AF119 /* BannerViewController.swift in Sources */,
 				B06EF82F2DE9A5FE00AD6051 /* String+Extension.swift in Sources */,
 				B06EF8302DE9A5FE00AD6051 /* UIImageView+Extension.swift in Sources */,
+				B06EF8382DE9A6EF00AD6051 /* ImageCacheManager.swift in Sources */,
+				B06EF8392DE9A6EF00AD6051 /* ImageCacheTestViewController.swift in Sources */,
 				B06EF8312DE9A5FE00AD6051 /* +Sets.swift in Sources */,
 				B06EF8322DE9A5FE00AD6051 /* Sets.swift in Sources */,
 			);
