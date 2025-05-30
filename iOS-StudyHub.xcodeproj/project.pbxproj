@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55E40F8BA5677D14BC092866 /* Pods_iOS_StudyHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27014D14E99BEA7CE0514479 /* Pods_iOS_StudyHub.framework */; };
 		B04656F82DAA98C600F1AAAA /* Bulider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04656F72DAA98C600F1AAAA /* Bulider.swift */; };
+		B06EF82F2DE9A5FE00AD6051 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06EF82C2DE9A5FE00AD6051 /* String+Extension.swift */; };
+		B06EF8302DE9A5FE00AD6051 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06EF82D2DE9A5FE00AD6051 /* UIImageView+Extension.swift */; };
+		B06EF8312DE9A5FE00AD6051 /* +Sets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06EF82A2DE9A5FE00AD6051 /* +Sets.swift */; };
+		B06EF8322DE9A5FE00AD6051 /* Sets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06EF82B2DE9A5FE00AD6051 /* Sets.swift */; };
 		B0E700692DA10DB200206106 /* BarcodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0E700672DA10DB200206106 /* BarcodeViewController.xib */; };
 		B0E7006A2DA10DB200206106 /* BarcodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E700662DA10DB200206106 /* BarcodeViewController.swift */; };
-		B0E7006D2DA153A300206106 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E7006B2DA153A300206106 /* ScrollViewController.swift */; };
-		B0E7006E2DA153A300206106 /* ScrollViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0E7006C2DA153A300206106 /* ScrollViewController.xib */; };
 		B0F423442D9C2597009AF119 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0F4233B2D9C2597009AF119 /* Assets.xcassets */; };
 		B0F423462D9C2597009AF119 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0F4233E2D9C2597009AF119 /* LaunchScreen.storyboard */; };
 		B0F423482D9C2597009AF119 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F4233A2D9C2597009AF119 /* AppDelegate.swift */; };
@@ -20,11 +23,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0925E67CC07CEF847C2FFBFA /* Pods-iOS-StudyHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-StudyHub.debug.xcconfig"; path = "Target Support Files/Pods-iOS-StudyHub/Pods-iOS-StudyHub.debug.xcconfig"; sourceTree = "<group>"; };
+		27014D14E99BEA7CE0514479 /* Pods_iOS_StudyHub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_StudyHub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B04656F72DAA98C600F1AAAA /* Bulider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bulider.swift; sourceTree = "<group>"; };
+		B06EF82A2DE9A5FE00AD6051 /* +Sets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "+Sets.swift"; sourceTree = "<group>"; };
+		B06EF82B2DE9A5FE00AD6051 /* Sets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sets.swift; sourceTree = "<group>"; };
+		B06EF82C2DE9A5FE00AD6051 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		B06EF82D2DE9A5FE00AD6051 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		B0E700662DA10DB200206106 /* BarcodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeViewController.swift; sourceTree = "<group>"; };
 		B0E700672DA10DB200206106 /* BarcodeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BarcodeViewController.xib; sourceTree = "<group>"; };
-		B0E7006B2DA153A300206106 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
-		B0E7006C2DA153A300206106 /* ScrollViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScrollViewController.xib; sourceTree = "<group>"; };
 		B0F423222D9C2584009AF119 /* iOS-StudyHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-StudyHub.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0F4233A2D9C2597009AF119 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0F4233B2D9C2597009AF119 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -32,6 +39,7 @@
 		B0F4233D2D9C2597009AF119 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0F423412D9C2597009AF119 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B0F4234B2D9C25E9009AF119 /* BannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerViewController.swift; sourceTree = "<group>"; };
+		F98F3C01B0723A39887D753A /* Pods-iOS-StudyHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-StudyHub.release.xcconfig"; path = "Target Support Files/Pods-iOS-StudyHub/Pods-iOS-StudyHub.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,18 +47,66 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55E40F8BA5677D14BC092866 /* Pods_iOS_StudyHub.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19A55CB07B266F22172ECFA2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0925E67CC07CEF847C2FFBFA /* Pods-iOS-StudyHub.debug.xcconfig */,
+				F98F3C01B0723A39887D753A /* Pods-iOS-StudyHub.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2574F86E3A0D87D5596CF452 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27014D14E99BEA7CE0514479 /* Pods_iOS_StudyHub.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B04656F62DAA98A300F1AAAA /* @resultBuilder */ = {
 			isa = PBXGroup;
 			children = (
 				B04656F72DAA98C600F1AAAA /* Bulider.swift */,
 			);
 			path = "@resultBuilder";
+			sourceTree = "<group>";
+		};
+		B06EF8282DE9A5D300AD6051 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				B0F4233A2D9C2597009AF119 /* AppDelegate.swift */,
+				B0F423412D9C2597009AF119 /* SceneDelegate.swift */,
+				B0F4233E2D9C2597009AF119 /* LaunchScreen.storyboard */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		B06EF8292DE9A5E200AD6051 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B0F4233B2D9C2597009AF119 /* Assets.xcassets */,
+				B0F4233C2D9C2597009AF119 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B06EF82E2DE9A5FE00AD6051 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B06EF82C2DE9A5FE00AD6051 /* String+Extension.swift */,
+				B06EF82D2DE9A5FE00AD6051 /* UIImageView+Extension.swift */,
+				B06EF82A2DE9A5FE00AD6051 /* +Sets.swift */,
+				B06EF82B2DE9A5FE00AD6051 /* Sets.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		B0E700682DA10DB200206106 /* AVFoundation-Barcode */ = {
@@ -67,6 +123,8 @@
 			children = (
 				B0F423432D9C2597009AF119 /* iOS-StudyHub */,
 				B0F423232D9C2584009AF119 /* Products */,
+				19A55CB07B266F22172ECFA2 /* Pods */,
+				2574F86E3A0D87D5596CF452 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,16 +139,12 @@
 		B0F423432D9C2597009AF119 /* iOS-StudyHub */ = {
 			isa = PBXGroup;
 			children = (
+				B06EF8282DE9A5D300AD6051 /* Application */,
 				B04656F62DAA98A300F1AAAA /* @resultBuilder */,
 				B0F4234C2D9C25E9009AF119 /* InfiniteRollingBanner */,
 				B0E700682DA10DB200206106 /* AVFoundation-Barcode */,
-				B0F4233B2D9C2597009AF119 /* Assets.xcassets */,
-				B0F4233C2D9C2597009AF119 /* Info.plist */,
-				B0F4233E2D9C2597009AF119 /* LaunchScreen.storyboard */,
-				B0F423412D9C2597009AF119 /* SceneDelegate.swift */,
-				B0F4233A2D9C2597009AF119 /* AppDelegate.swift */,
-				B0E7006B2DA153A300206106 /* ScrollViewController.swift */,
-				B0E7006C2DA153A300206106 /* ScrollViewController.xib */,
+				B06EF8292DE9A5E200AD6051 /* Resources */,
+				B06EF82E2DE9A5FE00AD6051 /* Utils */,
 			);
 			path = "iOS-StudyHub";
 			sourceTree = "<group>";
@@ -110,17 +164,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B0F423352D9C2587009AF119 /* Build configuration list for PBXNativeTarget "iOS-StudyHub" */;
 			buildPhases = (
+				6759EE869337BE8D5FF59AAC /* [CP] Check Pods Manifest.lock */,
 				B0F4231E2D9C2584009AF119 /* Sources */,
 				B0F4231F2D9C2584009AF119 /* Frameworks */,
 				B0F423202D9C2584009AF119 /* Resources */,
+				444248C862E575C14BEF9251 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "iOS-StudyHub";
-			packageProductDependencies = (
-			);
 			productName = "iOS-StudyHub";
 			productReference = B0F423222D9C2584009AF119 /* iOS-StudyHub.app */;
 			productType = "com.apple.product-type.application";
@@ -167,11 +221,52 @@
 				B0F423442D9C2597009AF119 /* Assets.xcassets in Resources */,
 				B0E700692DA10DB200206106 /* BarcodeViewController.xib in Resources */,
 				B0F423462D9C2597009AF119 /* LaunchScreen.storyboard in Resources */,
-				B0E7006E2DA153A300206106 /* ScrollViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		444248C862E575C14BEF9251 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOS-StudyHub/Pods-iOS-StudyHub-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOS-StudyHub/Pods-iOS-StudyHub-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOS-StudyHub/Pods-iOS-StudyHub-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6759EE869337BE8D5FF59AAC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOS-StudyHub-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B0F4231E2D9C2584009AF119 /* Sources */ = {
@@ -180,10 +275,13 @@
 			files = (
 				B0F423482D9C2597009AF119 /* AppDelegate.swift in Sources */,
 				B0E7006A2DA10DB200206106 /* BarcodeViewController.swift in Sources */,
-				B0E7006D2DA153A300206106 /* ScrollViewController.swift in Sources */,
 				B04656F82DAA98C600F1AAAA /* Bulider.swift in Sources */,
 				B0F423492D9C2597009AF119 /* SceneDelegate.swift in Sources */,
 				B0F4234D2D9C25E9009AF119 /* BannerViewController.swift in Sources */,
+				B06EF82F2DE9A5FE00AD6051 /* String+Extension.swift in Sources */,
+				B06EF8302DE9A5FE00AD6051 /* UIImageView+Extension.swift in Sources */,
+				B06EF8312DE9A5FE00AD6051 /* +Sets.swift in Sources */,
+				B06EF8322DE9A5FE00AD6051 /* Sets.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,14 +301,16 @@
 /* Begin XCBuildConfiguration section */
 		B0F423362D9C2587009AF119 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0925E67CC07CEF847C2FFBFA /* Pods-iOS-StudyHub.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SCD58U4SPR;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "iOS-StudyHub/Info.plist";
+				INFOPLIST_FILE = "iOS-StudyHub/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -231,14 +331,16 @@
 		};
 		B0F423372D9C2587009AF119 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F98F3C01B0723A39887D753A /* Pods-iOS-StudyHub.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SCD58U4SPR;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "iOS-StudyHub/Info.plist";
+				INFOPLIST_FILE = "iOS-StudyHub/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
