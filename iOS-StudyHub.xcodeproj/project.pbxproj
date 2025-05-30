@@ -18,6 +18,8 @@
 		B06EF8392DE9A6EF00AD6051 /* ImageCacheTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06EF8342DE9A6EF00AD6051 /* ImageCacheTestViewController.swift */; };
 		B06EF83D2DE9A79100AD6051 /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B06EF83B2DE9A79100AD6051 /* WebViewController.xib */; };
 		B06EF83E2DE9A79100AD6051 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06EF83A2DE9A79100AD6051 /* WebViewController.swift */; };
+		B06EF8432DE9A85C00AD6051 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B06EF8422DE9A85C00AD6051 /* MainViewController.xib */; };
+		B06EF8442DE9A85C00AD6051 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06EF8412DE9A85C00AD6051 /* MainViewController.swift */; };
 		B0E700692DA10DB200206106 /* BarcodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0E700672DA10DB200206106 /* BarcodeViewController.xib */; };
 		B0E7006A2DA10DB200206106 /* BarcodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E700662DA10DB200206106 /* BarcodeViewController.swift */; };
 		B0F423442D9C2597009AF119 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0F4233B2D9C2597009AF119 /* Assets.xcassets */; };
@@ -40,6 +42,8 @@
 		B06EF8352DE9A6EF00AD6051 /* ImageCacheTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCacheTestViewController.xib; sourceTree = "<group>"; };
 		B06EF83A2DE9A79100AD6051 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		B06EF83B2DE9A79100AD6051 /* WebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
+		B06EF8412DE9A85C00AD6051 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		B06EF8422DE9A85C00AD6051 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		B0E700662DA10DB200206106 /* BarcodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeViewController.swift; sourceTree = "<group>"; };
 		B0E700672DA10DB200206106 /* BarcodeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BarcodeViewController.xib; sourceTree = "<group>"; };
 		B0F423222D9C2584009AF119 /* iOS-StudyHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-StudyHub.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -169,6 +173,8 @@
 			isa = PBXGroup;
 			children = (
 				B06EF8282DE9A5D300AD6051 /* Application */,
+				B06EF8412DE9A85C00AD6051 /* MainViewController.swift */,
+				B06EF8422DE9A85C00AD6051 /* MainViewController.xib */,
 				B04656F62DAA98A300F1AAAA /* @resultBuilder */,
 				B0F4234C2D9C25E9009AF119 /* InfiniteRollingBanner */,
 				B0E700682DA10DB200206106 /* AVFoundation-Barcode */,
@@ -250,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0F423442D9C2597009AF119 /* Assets.xcassets in Resources */,
+				B06EF8432DE9A85C00AD6051 /* MainViewController.xib in Resources */,
 				B0E700692DA10DB200206106 /* BarcodeViewController.xib in Resources */,
 				B06EF8372DE9A6EF00AD6051 /* ImageCacheTestViewController.xib in Resources */,
 				B06EF83D2DE9A79100AD6051 /* WebViewController.xib in Resources */,
@@ -307,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0F423482D9C2597009AF119 /* AppDelegate.swift in Sources */,
+				B06EF8442DE9A85C00AD6051 /* MainViewController.swift in Sources */,
 				B0E7006A2DA10DB200206106 /* BarcodeViewController.swift in Sources */,
 				B04656F82DAA98C600F1AAAA /* Bulider.swift in Sources */,
 				B0F423492D9C2597009AF119 /* SceneDelegate.swift in Sources */,
