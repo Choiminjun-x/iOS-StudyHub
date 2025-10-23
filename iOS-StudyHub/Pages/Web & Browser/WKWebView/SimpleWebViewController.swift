@@ -1,5 +1,5 @@
 //
-//  WebViewController.swift
+//  SimpleWebViewController.swift
 //  iOS-StudyHub
 //
 //  Created by 최민준(Minjun Choi) on 5/28/25.
@@ -10,7 +10,7 @@ import WebKit
 import Combine
 import SnapKit
 
-class WebViewController: UIViewController {
+class SimpleWebViewController: UIViewController {
 
     private var webView: WKWebView!
     
@@ -82,7 +82,7 @@ class WebViewController: UIViewController {
     }
 }
 
-extension WebViewController: WKScriptMessageHandler {
+extension SimpleWebViewController: WKScriptMessageHandler {
     
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
         self.interfaceSubject.send(message)
