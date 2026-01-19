@@ -7,7 +7,6 @@
 
 import UIKit
 import SnapKit
-//import ComposableArchitecture
 
 class MainViewController: UIViewController {
     
@@ -76,13 +75,20 @@ class MainViewController: UIViewController {
             description: "RIBs 아키텍처 샘플 - Todo List",
             category: .architecture,
             viewController: TodoListBuilder().build().viewControllable.viewController
+        ),
+        // Concurrency
+        StudyMenuItem(
+            title: "Swift Concurrency MiniApp",
+            description: "async/await, Task, TaskGroup, MainActor 실습",
+            category: .concurrency,
+            viewController: ConcurrencyViewController()
         )
     ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupNavigation()
-        self.setupUI()
+        self.makeViewLayout()
     }
     
     private func setupNavigation() {
@@ -93,7 +99,7 @@ class MainViewController: UIViewController {
         self.navigationItem.backButtonTitle = ""
     }
     
-    private func setupUI() {
+    private func makeViewLayout() {
         self.view.do { superView in
             superView.backgroundColor = .systemGroupedBackground
             

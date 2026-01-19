@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		55E40F8BA5677D14BC092866 /* Pods_iOS_StudyHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27014D14E99BEA7CE0514479 /* Pods_iOS_StudyHub.framework */; };
+		B09357992F1E444700E01BB7 /* ConcurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09357982F1E444700E01BB7 /* ConcurrencyViewController.swift */; };
+		B093579B2F1E446E00E01BB7 /* ConcurrencyUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B093579A2F1E446E00E01BB7 /* ConcurrencyUser.swift */; };
+		B093579D2F1E44F000E01BB7 /* ConcurrencyUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B093579C2F1E44F000E01BB7 /* ConcurrencyUserService.swift */; };
+		B093579F2F1E463500E01BB7 /* ConcurrencyUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B093579E2F1E463500E01BB7 /* ConcurrencyUserViewModel.swift */; };
 		B0A5D8DF2EAA56B900DDF505 /* ImageCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A5D8CF2EAA56B900DDF505 /* ImageCacheManager.swift */; };
 		B0A5D8E12EAA56B900DDF505 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A5D8C22EAA56B900DDF505 /* DashboardViewModel.swift */; };
 		B0A5D8E32EAA56B900DDF505 /* ListOrderingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A5D8D52EAA56B900DDF505 /* ListOrderingViewController.swift */; };
@@ -51,6 +55,10 @@
 /* Begin PBXFileReference section */
 		0925E67CC07CEF847C2FFBFA /* Pods-iOS-StudyHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-StudyHub.debug.xcconfig"; path = "Target Support Files/Pods-iOS-StudyHub/Pods-iOS-StudyHub.debug.xcconfig"; sourceTree = "<group>"; };
 		27014D14E99BEA7CE0514479 /* Pods_iOS_StudyHub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_StudyHub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B09357982F1E444700E01BB7 /* ConcurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrencyViewController.swift; sourceTree = "<group>"; };
+		B093579A2F1E446E00E01BB7 /* ConcurrencyUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrencyUser.swift; sourceTree = "<group>"; };
+		B093579C2F1E44F000E01BB7 /* ConcurrencyUserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrencyUserService.swift; sourceTree = "<group>"; };
+		B093579E2F1E463500E01BB7 /* ConcurrencyUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrencyUserViewModel.swift; sourceTree = "<group>"; };
 		B0A5D8A62EAA56B900DDF505 /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
 		B0A5D8A72EAA56B900DDF505 /* TodoItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItemViewModel.swift; sourceTree = "<group>"; };
 		B0A5D8A82EAA56B900DDF505 /* TodoListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListBuilder.swift; sourceTree = "<group>"; };
@@ -139,6 +147,33 @@
 				B0F4233B2D9C2597009AF119 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		B09357952F1E435500E01BB7 /* Swift Concurrency */ = {
+			isa = PBXGroup;
+			children = (
+				B09357A12F1E496200E01BB7 /* Service */,
+				B09357A02F1E495C00E01BB7 /* Model */,
+				B09357982F1E444700E01BB7 /* ConcurrencyViewController.swift */,
+				B093579E2F1E463500E01BB7 /* ConcurrencyUserViewModel.swift */,
+			);
+			path = "Swift Concurrency";
+			sourceTree = "<group>";
+		};
+		B09357A02F1E495C00E01BB7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B093579A2F1E446E00E01BB7 /* ConcurrencyUser.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B09357A12F1E496200E01BB7 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B093579C2F1E44F000E01BB7 /* ConcurrencyUserService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		B0A5D8AD2EAA56B900DDF505 /* RIBs */ = {
@@ -310,12 +345,13 @@
 		B0A5D8DE2EAA56B900DDF505 /* Pages */ = {
 			isa = PBXGroup;
 			children = (
-				B0A5D8B12EAA56B900DDF505 /* Architecture */,
 				B0A5D8BB2EAA56B900DDF505 /* Main */,
+				B0A5D8B12EAA56B900DDF505 /* Architecture */,
 				B0A5D8BF2EAA56B900DDF505 /* Media & Camera */,
 				B0A5D8C92EAA56B900DDF505 /* SwiftUI+UIKit */,
 				B0A5D8D72EAA56B900DDF505 /* UIKit */,
 				B0A5D8DD2EAA56B900DDF505 /* Web & Browser */,
+				B09357952F1E435500E01BB7 /* Swift Concurrency */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -451,13 +487,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-iOS-StudyHub/Pods-iOS-StudyHub-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-iOS-StudyHub/Pods-iOS-StudyHub-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -499,12 +531,15 @@
 				B0A5D8E42EAA56B900DDF505 /* UIComponentsDemoViewController.swift in Sources */,
 				B0A5D8E52EAA56B900DDF505 /* DashboardView.swift in Sources */,
 				B0A5D8E62EAA56B900DDF505 /* ListCell.swift in Sources */,
+				B093579D2F1E44F000E01BB7 /* ConcurrencyUserService.swift in Sources */,
 				B0A5D8E72EAA56B900DDF505 /* SimpleWebViewController.swift in Sources */,
 				B0A5D9082EAA56C300DDF505 /* String+Extension.swift in Sources */,
 				B0A5D9092EAA56C300DDF505 /* UICollectionView+Extension.swift in Sources */,
 				B0A5D90A2EAA56C300DDF505 /* UIColor+Extension.swift in Sources */,
 				B0A5D90B2EAA56C300DDF505 /* +Sets.swift in Sources */,
 				B0A5D90C2EAA56C300DDF505 /* UIImageView+Extension.swift in Sources */,
+				B09357992F1E444700E01BB7 /* ConcurrencyViewController.swift in Sources */,
+				B093579B2F1E446E00E01BB7 /* ConcurrencyUser.swift in Sources */,
 				B0A5D90D2EAA56C300DDF505 /* Sets.swift in Sources */,
 				B0A5D8E82EAA56B900DDF505 /* CarouselView.swift in Sources */,
 				B0A5D8E92EAA56B900DDF505 /* SFSafariWebViewController.swift in Sources */,
@@ -518,6 +553,7 @@
 				B0A5D8F52EAA56B900DDF505 /* UIComponentsDemoView.swift in Sources */,
 				B0A5D8F62EAA56B900DDF505 /* UserProfileView.swift in Sources */,
 				B0A5D8F72EAA56B900DDF505 /* ImageCacheTestViewController.swift in Sources */,
+				B093579F2F1E463500E01BB7 /* ConcurrencyUserViewModel.swift in Sources */,
 				B0A5D8F82EAA56B900DDF505 /* TodoListBuilder.swift in Sources */,
 				B0A5D8F92EAA56B900DDF505 /* HybridUserProfileViewController.swift in Sources */,
 				B0A5D8FA2EAA56B900DDF505 /* StudyMenuTableViewCell.swift in Sources */,
@@ -551,7 +587,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 34URJ87ZA5;
+				DEVELOPMENT_TEAM = SCD58U4SPR;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS-StudyHub/SupportingFiles/Info.plist";
@@ -581,7 +617,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 34URJ87ZA5;
+				DEVELOPMENT_TEAM = SCD58U4SPR;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS-StudyHub/SupportingFiles/Info.plist";

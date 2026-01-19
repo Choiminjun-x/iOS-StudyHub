@@ -29,6 +29,7 @@ enum StudyCategory: String, CaseIterable {
     case web = "Web & Browser"
     case localization = "Localization & Translation"
     case architecture = "Architecture"
+    case concurrency = "concurrency"
     
     var color: UIColor {
         switch self {
@@ -38,6 +39,7 @@ enum StudyCategory: String, CaseIterable {
         case .web: return .systemOrange
         case .localization: return .systemYellow
         case .architecture: return .systemPink
+        case .concurrency: return .systemMint
         }
     }
 }
@@ -49,7 +51,7 @@ class StudyMenuTableViewCell: UITableViewCell {
     private var categoryLabel: UILabel!
     private var titleLabel: UILabel!
     private var descriptionLabel: UILabel!
-    private var containerView: UIView!
+    private var containerView = UIView()
     private var categoryColorView: UIView!
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -66,7 +68,7 @@ class StudyMenuTableViewCell: UITableViewCell {
         self.backgroundColor = .clear
         
         self.contentView.do { superView in
-            self.containerView = UIView().do { containerView in
+            self.containerView.do { containerView in
                 containerView.backgroundColor = .systemBackground
                 containerView.layer.cornerRadius = 12
                 containerView.layer.shadowColor = UIColor.black.cgColor
