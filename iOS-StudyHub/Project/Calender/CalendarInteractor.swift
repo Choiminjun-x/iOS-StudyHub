@@ -17,8 +17,7 @@ protocol CalendarPresentable: Presentable {
     var listener: CalendarPresentableListener? { get set }
     
 //    // 정보 업데이트 -> ViewController 전달
-    func updateDays(_ days: [CalendarDay])
-//    func showError(_ message: String)
+    func updateDays(_ days: [[CalendarDay]])
 }
 
 public protocol CalendarListener: AnyObject {
@@ -30,10 +29,10 @@ class CalendarInteractor: PresentableInteractor<CalendarPresentable>, CalendarIn
     var router: CalendarRouting?
     var listener: CalendarListener?
     
-    private let dateProvider: CalendarDateProviding
+    private let dateGenerator: DateGenerator
  
-    init(presenter: CalendarPresentable, dateProvider: CalendarDateProviding) {
-        self.dateProvider = dateProvider
+    init(presenter: CalendarPresentable, dateGenerator: DateGenerator) {
+        self.dateGenerator = dateGenerator
         super.init(presenter: presenter)
         presenter.listener = self
     }
@@ -45,7 +44,7 @@ class CalendarInteractor: PresentableInteractor<CalendarPresentable>, CalendarIn
     }
     
     func requestCalendarInfo() {
-        let days = self.dateProvider.generateCurrentMonthDays()
+        let days = self.dateGenerator.generateNextMonthsData(monthCount: 4)
         // 최초 캘린더 호출
         self.presenter.updateDays(days)
     }

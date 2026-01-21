@@ -15,7 +15,7 @@ protocol AppRootDependency: Dependency {
 
 final class AppRootComponent: Component<AppRootDependency>, CalendarDependency {
     // Shared app-level dependencies
-    let dateProvider: CalendarDateProviding = CalendarDateProvider()
+    let dateGenerator: DateGenerator = CalendarDateGenerator()
 }
 
 // MARK: - Builder

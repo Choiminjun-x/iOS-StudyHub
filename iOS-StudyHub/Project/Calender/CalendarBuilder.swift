@@ -9,11 +9,11 @@ import Foundation
 import RIBs
 
 protocol CalendarDependency: Dependency {
-    var dateProvider: CalendarDateProviding { get }
+    var dateGenerator: DateGenerator { get }
 }
 
 final class CalendarComponent: Component<CalendarDependency> {
-    var dateProvider: CalendarDateProviding { dependency.dateProvider }
+    var dateGenerator: DateGenerator { dependency.dateGenerator }
 }
 
 public protocol CalendarBuildable: Buildable {
@@ -28,8 +28,8 @@ class CalendarBuilder: Builder<CalendarDependency>, CalendarBuildable {
     
     public func build(withListener listener: CalendarListener) -> ViewableRouting {
         let component = CalendarComponent(dependency: dependency)
-        let viewController = CalendarViewController(dateProvider: component.dateProvider)
-        let interactor = CalendarInteractor(presenter: viewController, dateProvider: component.dateProvider)
+        let viewController = CalendarViewController(dateGenerator: component.dateGenerator)
+        let interactor = CalendarInteractor(presenter: viewController, dateGenerator: component.dateGenerator)
         interactor.listener = listener
         
         return CalendarRouter(interactor: interactor,

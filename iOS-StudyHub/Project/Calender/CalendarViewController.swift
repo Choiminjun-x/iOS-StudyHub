@@ -30,10 +30,10 @@ final class CalendarViewController: UIViewController, CalendarViewControllable, 
     private var cancellables = Set<AnyCancellable>()
     
     // MARK: instantiate
-    private let dateProvider: CalendarDateProviding
+    private let dateGenerator: DateGenerator
     
-    init(dateProvider: CalendarDateProviding) {
-        self.dateProvider = dateProvider
+    init(dateGenerator: DateGenerator) {
+        self.dateGenerator = dateGenerator
         super.init(nibName: nil, bundle: nil)
         self.setupNavigation()
     }
@@ -55,20 +55,20 @@ final class CalendarViewController: UIViewController, CalendarViewControllable, 
     // MARK: View lifecycle
     
     override func loadView() {
-        self.view = CalendarView.create(with: dateProvider)
+        self.view = CalendarView.create(with: dateGenerator)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.viewDisplayLogic.do {
-            $0.didChangeMonth.sink { text in
+            $0.displayMonthInfo.sink { text in
                 self.navigationItem.title = text
             }.store(in: &cancellables)
         }
     }
     
-    func updateDays(_ days: [CalendarDay]) {
+    func updateDays(_ days: [[CalendarDay]]) {
         self.viewDisplayLogic.displayPageInfo(days)
     }
 }
