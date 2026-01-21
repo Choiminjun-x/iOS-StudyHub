@@ -69,13 +69,6 @@ class MainViewController: UIViewController {
             category: .web,
             viewController: SFSafariWebViewController()
         ),
-        // Architecture
-        StudyMenuItem(
-            title: "RIBs Todo List",
-            description: "RIBs 아키텍처 샘플 - Todo List",
-            category: .architecture,
-            viewController: TodoListBuilder().build().viewControllable.viewController
-        ),
         // Concurrency
         StudyMenuItem(
             title: "Swift Concurrency MiniApp",

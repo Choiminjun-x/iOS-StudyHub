@@ -6,19 +6,28 @@
 //
 
 import UIKit
+import RIBs
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
+    private var launchRouter: LaunchRouting?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
+        // 1. Window 생성 및 설정
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = MainViewController.withNavigationController()
-        window?.makeKeyAndVisible()
         window?.windowScene = windowScene
+        
+        // 2. RIBs 구조 생성
+        let appComponent = AppComponent()
+        let appRootBuilder = AppRootBuilder(dependency: appComponent)
+        launchRouter = appRootBuilder.build()
+        
+        // 3. RIBs 런칭?
+        launchRouter?.launch(from: window!)
     }
 
 

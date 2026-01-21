@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E3777B52F20B065004384E2 /* RIBs in Frameworks */ = {isa = PBXBuildFile; productRef = 3E3777B42F20B065004384E2 /* RIBs */; };
+		3E3777BB2F20B3F8004384E2 /* AppRootBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3777B62F20B3F8004384E2 /* AppRootBuilder.swift */; };
+		3E3777BD2F20B3F8004384E2 /* AppRootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3777B72F20B3F8004384E2 /* AppRootInteractor.swift */; };
+		3E3777BE2F20B3F8004384E2 /* AppRootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3777B82F20B3F8004384E2 /* AppRootRouter.swift */; };
+		3E3777C02F20B4D3004384E2 /* AppComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3777BF2F20B4D3004384E2 /* AppComponent.swift */; };
+		3EF2C1962F20665000B42472 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF2C1952F20665000B42472 /* MainTabBarController.swift */; };
+		3EF2C1992F207A7F00B42472 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF2C1982F207A7F00B42472 /* HomeViewController.swift */; };
+		3EF2C19B2F207A9E00B42472 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF2C19A2F207A9E00B42472 /* HomeView.swift */; };
+		3EF2C19E2F208F7C00B42472 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF2C19D2F208F7C00B42472 /* CalendarView.swift */; };
+		3EF2C1A02F208F9100B42472 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF2C19F2F208F9100B42472 /* CalendarViewController.swift */; };
+		3EF2C1A22F2091F400B42472 /* CalendarDateProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF2C1A12F2091F400B42472 /* CalendarDateProvider.swift */; };
+		3EF2C1A42F20A41D00B42472 /* CalendarBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF2C1A32F20A41D00B42472 /* CalendarBuilder.swift */; };
+		3EF2C1A62F20A43B00B42472 /* CalendarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF2C1A52F20A43B00B42472 /* CalendarInteractor.swift */; };
+		3EF2C1AA2F20A45C00B42472 /* CalendarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF2C1A92F20A45C00B42472 /* CalendarRouter.swift */; };
 		55E40F8BA5677D14BC092866 /* Pods_iOS_StudyHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27014D14E99BEA7CE0514479 /* Pods_iOS_StudyHub.framework */; };
 		B09357992F1E444700E01BB7 /* ConcurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09357982F1E444700E01BB7 /* ConcurrencyViewController.swift */; };
 		B093579B2F1E446E00E01BB7 /* ConcurrencyUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B093579A2F1E446E00E01BB7 /* ConcurrencyUser.swift */; };
@@ -21,22 +35,15 @@
 		B0A5D8E72EAA56B900DDF505 /* SimpleWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A5D8DA2EAA56B900DDF505 /* SimpleWebViewController.swift */; };
 		B0A5D8E82EAA56B900DDF505 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A5D8CA2EAA56B900DDF505 /* CarouselView.swift */; };
 		B0A5D8E92EAA56B900DDF505 /* SFSafariWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A5D8D82EAA56B900DDF505 /* SFSafariWebViewController.swift */; };
-		B0A5D8EA2EAA56B900DDF505 /* TodoItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A5D8A72EAA56B900DDF505 /* TodoItemViewModel.swift */; };
 		B0A5D8EB2EAA56B900DDF505 /* HybridDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A5D8C52EAA56B900DDF505 /* HybridDashboardViewController.swift */; };
 		B0A5D8EC2EAA56B900DDF505 /* BarcodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A5D8BC2EAA56B900DDF505 /* BarcodeViewController.swift */; };
 		B0A5D8F12EAA56B900DDF505 /* DashboardDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A5D8C02EAA56B900DDF505 /* DashboardDataModel.swift */; };
-		B0A5D8F22EAA56B900DDF505 /* TodoListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A5D8AB2EAA56B900DDF505 /* TodoListRouter.swift */; };
 		B0A5D8F32EAA56B900DDF505 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A5D8B92EAA56B900DDF505 /* MainViewController.swift */; };
-		B0A5D8F42EAA56B900DDF505 /* TodoListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A5D8AA2EAA56B900DDF505 /* TodoListPresenter.swift */; };
 		B0A5D8F52EAA56B900DDF505 /* UIComponentsDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A5D8CC2EAA56B900DDF505 /* UIComponentsDemoView.swift */; };
 		B0A5D8F62EAA56B900DDF505 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A5D8C82EAA56B900DDF505 /* UserProfileView.swift */; };
 		B0A5D8F72EAA56B900DDF505 /* ImageCacheTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A5D8D02EAA56B900DDF505 /* ImageCacheTestViewController.swift */; };
-		B0A5D8F82EAA56B900DDF505 /* TodoListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A5D8A82EAA56B900DDF505 /* TodoListBuilder.swift */; };
 		B0A5D8F92EAA56B900DDF505 /* HybridUserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A5D8C72EAA56B900DDF505 /* HybridUserProfileViewController.swift */; };
 		B0A5D8FA2EAA56B900DDF505 /* StudyMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A5D8BA2EAA56B900DDF505 /* StudyMenuTableViewCell.swift */; };
-		B0A5D8FB2EAA56B900DDF505 /* TodoListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A5D8A92EAA56B900DDF505 /* TodoListInteractor.swift */; };
-		B0A5D8FC2EAA56B900DDF505 /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A5D8AC2EAA56B900DDF505 /* TodoListViewController.swift */; };
-		B0A5D8FD2EAA56B900DDF505 /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A5D8A62EAA56B900DDF505 /* TodoItem.swift */; };
 		B0A5D8FE2EAA56B900DDF505 /* SimpleWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0A5D8DB2EAA56B900DDF505 /* SimpleWebViewController.xib */; };
 		B0A5D8FF2EAA56B900DDF505 /* BarcodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0A5D8BD2EAA56B900DDF505 /* BarcodeViewController.xib */; };
 		B0A5D9002EAA56B900DDF505 /* ImageCacheTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0A5D8D12EAA56B900DDF505 /* ImageCacheTestViewController.xib */; };
@@ -55,17 +62,23 @@
 /* Begin PBXFileReference section */
 		0925E67CC07CEF847C2FFBFA /* Pods-iOS-StudyHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-StudyHub.debug.xcconfig"; path = "Target Support Files/Pods-iOS-StudyHub/Pods-iOS-StudyHub.debug.xcconfig"; sourceTree = "<group>"; };
 		27014D14E99BEA7CE0514479 /* Pods_iOS_StudyHub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_StudyHub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E3777B62F20B3F8004384E2 /* AppRootBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootBuilder.swift; sourceTree = "<group>"; };
+		3E3777B72F20B3F8004384E2 /* AppRootInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootInteractor.swift; sourceTree = "<group>"; };
+		3E3777B82F20B3F8004384E2 /* AppRootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootRouter.swift; sourceTree = "<group>"; };
+		3E3777BF2F20B4D3004384E2 /* AppComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppComponent.swift; sourceTree = "<group>"; };
+		3EF2C1952F20665000B42472 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		3EF2C1982F207A7F00B42472 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3EF2C19A2F207A9E00B42472 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		3EF2C19D2F208F7C00B42472 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		3EF2C19F2F208F9100B42472 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		3EF2C1A12F2091F400B42472 /* CalendarDateProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDateProvider.swift; sourceTree = "<group>"; };
+		3EF2C1A32F20A41D00B42472 /* CalendarBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarBuilder.swift; sourceTree = "<group>"; };
+		3EF2C1A52F20A43B00B42472 /* CalendarInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarInteractor.swift; sourceTree = "<group>"; };
+		3EF2C1A92F20A45C00B42472 /* CalendarRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarRouter.swift; sourceTree = "<group>"; };
 		B09357982F1E444700E01BB7 /* ConcurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrencyViewController.swift; sourceTree = "<group>"; };
 		B093579A2F1E446E00E01BB7 /* ConcurrencyUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrencyUser.swift; sourceTree = "<group>"; };
 		B093579C2F1E44F000E01BB7 /* ConcurrencyUserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrencyUserService.swift; sourceTree = "<group>"; };
 		B093579E2F1E463500E01BB7 /* ConcurrencyUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrencyUserViewModel.swift; sourceTree = "<group>"; };
-		B0A5D8A62EAA56B900DDF505 /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
-		B0A5D8A72EAA56B900DDF505 /* TodoItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItemViewModel.swift; sourceTree = "<group>"; };
-		B0A5D8A82EAA56B900DDF505 /* TodoListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListBuilder.swift; sourceTree = "<group>"; };
-		B0A5D8A92EAA56B900DDF505 /* TodoListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListInteractor.swift; sourceTree = "<group>"; };
-		B0A5D8AA2EAA56B900DDF505 /* TodoListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListPresenter.swift; sourceTree = "<group>"; };
-		B0A5D8AB2EAA56B900DDF505 /* TodoListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListRouter.swift; sourceTree = "<group>"; };
-		B0A5D8AC2EAA56B900DDF505 /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
 		B0A5D8B92EAA56B900DDF505 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B0A5D8BA2EAA56B900DDF505 /* StudyMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyMenuTableViewCell.swift; sourceTree = "<group>"; };
 		B0A5D8BC2EAA56B900DDF505 /* BarcodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E3777B52F20B065004384E2 /* RIBs in Frameworks */,
 				55E40F8BA5677D14BC092866 /* Pods_iOS_StudyHub.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -129,6 +143,50 @@
 				27014D14E99BEA7CE0514479 /* Pods_iOS_StudyHub.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3E3777BA2F20B3F8004384E2 /* AppRoot */ = {
+			isa = PBXGroup;
+			children = (
+				3E3777BF2F20B4D3004384E2 /* AppComponent.swift */,
+				3E3777B62F20B3F8004384E2 /* AppRootBuilder.swift */,
+				3E3777B72F20B3F8004384E2 /* AppRootInteractor.swift */,
+				3E3777B82F20B3F8004384E2 /* AppRootRouter.swift */,
+			);
+			path = AppRoot;
+			sourceTree = "<group>";
+		};
+		3EF2C1942F2065CA00B42472 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				3E3777BA2F20B3F8004384E2 /* AppRoot */,
+				3EF2C19C2F207C3B00B42472 /* Home */,
+				3EF2C1972F207A3B00B42472 /* Calender */,
+				3EF2C1952F20665000B42472 /* MainTabBarController.swift */,
+			);
+			path = Project;
+			sourceTree = "<group>";
+		};
+		3EF2C1972F207A3B00B42472 /* Calender */ = {
+			isa = PBXGroup;
+			children = (
+				3EF2C1A12F2091F400B42472 /* CalendarDateProvider.swift */,
+				3EF2C1A32F20A41D00B42472 /* CalendarBuilder.swift */,
+				3EF2C19D2F208F7C00B42472 /* CalendarView.swift */,
+				3EF2C19F2F208F9100B42472 /* CalendarViewController.swift */,
+				3EF2C1A52F20A43B00B42472 /* CalendarInteractor.swift */,
+				3EF2C1A92F20A45C00B42472 /* CalendarRouter.swift */,
+			);
+			path = Calender;
+			sourceTree = "<group>";
+		};
+		3EF2C19C2F207C3B00B42472 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3EF2C19A2F207A9E00B42472 /* HomeView.swift */,
+				3EF2C1982F207A7F00B42472 /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		B06EF8282DE9A5D300AD6051 /* Application */ = {
@@ -176,24 +234,9 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
-		B0A5D8AD2EAA56B900DDF505 /* RIBs */ = {
-			isa = PBXGroup;
-			children = (
-				B0A5D8A62EAA56B900DDF505 /* TodoItem.swift */,
-				B0A5D8A72EAA56B900DDF505 /* TodoItemViewModel.swift */,
-				B0A5D8A82EAA56B900DDF505 /* TodoListBuilder.swift */,
-				B0A5D8A92EAA56B900DDF505 /* TodoListInteractor.swift */,
-				B0A5D8AA2EAA56B900DDF505 /* TodoListPresenter.swift */,
-				B0A5D8AB2EAA56B900DDF505 /* TodoListRouter.swift */,
-				B0A5D8AC2EAA56B900DDF505 /* TodoListViewController.swift */,
-			);
-			path = RIBs;
-			sourceTree = "<group>";
-		};
 		B0A5D8B12EAA56B900DDF505 /* Architecture */ = {
 			isa = PBXGroup;
 			children = (
-				B0A5D8AD2EAA56B900DDF505 /* RIBs */,
 			);
 			path = Architecture;
 			sourceTree = "<group>";
@@ -399,6 +442,7 @@
 			isa = PBXGroup;
 			children = (
 				B06EF8282DE9A5D300AD6051 /* Application */,
+				3EF2C1942F2065CA00B42472 /* Project */,
 				B0A5D8DE2EAA56B900DDF505 /* Pages */,
 				B0A5D9072EAA56C300DDF505 /* Utils */,
 				B06EF8292DE9A5E200AD6051 /* Resources */,
@@ -453,6 +497,9 @@
 			);
 			mainGroup = B0F423192D9C2584009AF119;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				3E3777B32F20B065004384E2 /* XCRemoteSwiftPackageReference "RIBs-iOS" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B0F423232D9C2584009AF119 /* Products */;
 			projectDirPath = "";
@@ -487,9 +534,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-iOS-StudyHub/Pods-iOS-StudyHub-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-iOS-StudyHub/Pods-iOS-StudyHub-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -530,38 +581,44 @@
 				B0A5D8E32EAA56B900DDF505 /* ListOrderingViewController.swift in Sources */,
 				B0A5D8E42EAA56B900DDF505 /* UIComponentsDemoViewController.swift in Sources */,
 				B0A5D8E52EAA56B900DDF505 /* DashboardView.swift in Sources */,
+				3EF2C1A22F2091F400B42472 /* CalendarDateProvider.swift in Sources */,
 				B0A5D8E62EAA56B900DDF505 /* ListCell.swift in Sources */,
 				B093579D2F1E44F000E01BB7 /* ConcurrencyUserService.swift in Sources */,
+				3EF2C1A62F20A43B00B42472 /* CalendarInteractor.swift in Sources */,
 				B0A5D8E72EAA56B900DDF505 /* SimpleWebViewController.swift in Sources */,
 				B0A5D9082EAA56C300DDF505 /* String+Extension.swift in Sources */,
 				B0A5D9092EAA56C300DDF505 /* UICollectionView+Extension.swift in Sources */,
 				B0A5D90A2EAA56C300DDF505 /* UIColor+Extension.swift in Sources */,
+				3EF2C1992F207A7F00B42472 /* HomeViewController.swift in Sources */,
+				3EF2C1A02F208F9100B42472 /* CalendarViewController.swift in Sources */,
+				3E3777BB2F20B3F8004384E2 /* AppRootBuilder.swift in Sources */,
+				3E3777BD2F20B3F8004384E2 /* AppRootInteractor.swift in Sources */,
+				3E3777BE2F20B3F8004384E2 /* AppRootRouter.swift in Sources */,
 				B0A5D90B2EAA56C300DDF505 /* +Sets.swift in Sources */,
+				3E3777C02F20B4D3004384E2 /* AppComponent.swift in Sources */,
+				3EF2C19B2F207A9E00B42472 /* HomeView.swift in Sources */,
 				B0A5D90C2EAA56C300DDF505 /* UIImageView+Extension.swift in Sources */,
 				B09357992F1E444700E01BB7 /* ConcurrencyViewController.swift in Sources */,
 				B093579B2F1E446E00E01BB7 /* ConcurrencyUser.swift in Sources */,
 				B0A5D90D2EAA56C300DDF505 /* Sets.swift in Sources */,
 				B0A5D8E82EAA56B900DDF505 /* CarouselView.swift in Sources */,
 				B0A5D8E92EAA56B900DDF505 /* SFSafariWebViewController.swift in Sources */,
-				B0A5D8EA2EAA56B900DDF505 /* TodoItemViewModel.swift in Sources */,
+				3EF2C1AA2F20A45C00B42472 /* CalendarRouter.swift in Sources */,
 				B0A5D8EB2EAA56B900DDF505 /* HybridDashboardViewController.swift in Sources */,
 				B0A5D8EC2EAA56B900DDF505 /* BarcodeViewController.swift in Sources */,
 				B0A5D8F12EAA56B900DDF505 /* DashboardDataModel.swift in Sources */,
-				B0A5D8F22EAA56B900DDF505 /* TodoListRouter.swift in Sources */,
 				B0A5D8F32EAA56B900DDF505 /* MainViewController.swift in Sources */,
-				B0A5D8F42EAA56B900DDF505 /* TodoListPresenter.swift in Sources */,
 				B0A5D8F52EAA56B900DDF505 /* UIComponentsDemoView.swift in Sources */,
 				B0A5D8F62EAA56B900DDF505 /* UserProfileView.swift in Sources */,
 				B0A5D8F72EAA56B900DDF505 /* ImageCacheTestViewController.swift in Sources */,
 				B093579F2F1E463500E01BB7 /* ConcurrencyUserViewModel.swift in Sources */,
-				B0A5D8F82EAA56B900DDF505 /* TodoListBuilder.swift in Sources */,
 				B0A5D8F92EAA56B900DDF505 /* HybridUserProfileViewController.swift in Sources */,
 				B0A5D8FA2EAA56B900DDF505 /* StudyMenuTableViewCell.swift in Sources */,
-				B0A5D8FB2EAA56B900DDF505 /* TodoListInteractor.swift in Sources */,
-				B0A5D8FC2EAA56B900DDF505 /* TodoListViewController.swift in Sources */,
-				B0A5D8FD2EAA56B900DDF505 /* TodoItem.swift in Sources */,
+				3EF2C1962F20665000B42472 /* MainTabBarController.swift in Sources */,
 				B0F423482D9C2597009AF119 /* AppDelegate.swift in Sources */,
+				3EF2C1A42F20A41D00B42472 /* CalendarBuilder.swift in Sources */,
 				B0F423492D9C2597009AF119 /* SceneDelegate.swift in Sources */,
+				3EF2C19E2F208F7C00B42472 /* CalendarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -587,7 +644,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = SCD58U4SPR;
+				DEVELOPMENT_TEAM = 22F59WHQP8;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS-StudyHub/SupportingFiles/Info.plist";
@@ -617,7 +674,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = SCD58U4SPR;
+				DEVELOPMENT_TEAM = 22F59WHQP8;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS-StudyHub/SupportingFiles/Info.plist";
@@ -780,6 +837,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3E3777B32F20B065004384E2 /* XCRemoteSwiftPackageReference "RIBs-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/uber/RIBs-iOS.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3E3777B42F20B065004384E2 /* RIBs */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3E3777B32F20B065004384E2 /* XCRemoteSwiftPackageReference "RIBs-iOS" */;
+			productName = RIBs;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B0F4231A2D9C2584009AF119 /* Project object */;
 }
