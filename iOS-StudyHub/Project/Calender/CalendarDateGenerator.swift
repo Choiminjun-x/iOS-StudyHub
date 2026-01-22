@@ -18,28 +18,13 @@ struct CalendarDay {
 
 protocol DateGenerator {
     // generate - Network, DB 요청 X
-    func generateNextMonthsData(monthCount: Int) -> [[CalendarDay]]
     func generateMonthDays(for date: Date) -> [CalendarDay]
 }
 
 final class CalendarDateGenerator: DateGenerator {
+    
     private let calendar = Calendar.current
-    
-    /// 📦 여러 달을 [월][날짜] 구조로 반환
-    func generateNextMonthsData(monthCount: Int = 4) -> [[CalendarDay]] {
-        let today = Date()
-        var monthData: [[CalendarDay]] = []
-        
-        for offset in 0..<monthCount {
-            if let targetDate = calendar.date(byAdding: .month, value: offset, to: today) {
-                let monthDays = generateMonthDays(for: targetDate)
-                monthData.append(monthDays)
-            }
-        }
-        
-        return monthData
-    }
-    
+   
     func generateMonthDays(for date: Date) -> [CalendarDay] {
         guard let monthInterval = calendar.dateInterval(of: .month, for: date),
               let firstWeekday = calendar.dateComponents([.weekday], from: monthInterval.start).weekday else {

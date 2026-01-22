@@ -39,15 +39,13 @@ final class AppRootRouter: LaunchRouter<AppRootInteractable, AppRootViewControll
         
         attachChild(calendarRouting)
         
+        let calendarNav = UINavigationController(rootViewController: calendarRouting.viewControllable.uiviewController)
+        calendarNav.tabBarItem = UITabBarItem(title: "캘린더", image: UIImage(systemName: "calendar"), tag: 1)
         
         let viewControllers = [
-            UINavigationController(rootViewController: calendarRouting.viewControllable.uiviewController)
+            calendarNav
         ]
         
         viewController.setViewControllers(viewControllers)
     }
 }
-
-// UserInfo
-// TodoList
-//

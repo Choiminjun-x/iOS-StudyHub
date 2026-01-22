@@ -161,12 +161,20 @@
 			path = AppRoot;
 			sourceTree = "<group>";
 		};
+		3E49246F2F22084B000DCADB /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
 		3EF2C1942F2065CA00B42472 /* Project */ = {
 			isa = PBXGroup;
 			children = (
 				3E3777BA2F20B3F8004384E2 /* AppRoot */,
 				3EF2C19C2F207C3B00B42472 /* Home */,
 				3EF2C1972F207A3B00B42472 /* Calender */,
+				3E49246F2F22084B000DCADB /* Setting */,
 			);
 			path = Project;
 			sourceTree = "<group>";
@@ -175,7 +183,6 @@
 			isa = PBXGroup;
 			children = (
 				B0C1594D2F20FA8100A7EFF1 /* Subviews */,
-				B0C1594A2F20E44B00A7EFF1 /* Cell */,
 				3EF2C1A12F2091F400B42472 /* CalendarDateGenerator.swift */,
 				3EF2C1A32F20A41D00B42472 /* CalendarBuilder.swift */,
 				3EF2C19D2F208F7C00B42472 /* CalendarView.swift */,
@@ -437,6 +444,7 @@
 		B0C1594D2F20FA8100A7EFF1 /* Subviews */ = {
 			isa = PBXGroup;
 			children = (
+				B0C1594A2F20E44B00A7EFF1 /* Cell */,
 				B0C1594E2F20FA9800A7EFF1 /* WeekHeaderView.swift */,
 			);
 			path = Subviews;
@@ -668,7 +676,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = SCD58U4SPR;
+				DEVELOPMENT_TEAM = 22F59WHQP8;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS-StudyHub/SupportingFiles/Info.plist";
@@ -698,7 +706,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = SCD58U4SPR;
+				DEVELOPMENT_TEAM = 22F59WHQP8;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS-StudyHub/SupportingFiles/Info.plist";

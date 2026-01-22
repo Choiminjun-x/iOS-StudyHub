@@ -28,8 +28,8 @@ class CalendarBuilder: Builder<CalendarDependency>, CalendarBuildable {
     
     public func build(withListener listener: CalendarListener) -> ViewableRouting {
         let component = CalendarComponent(dependency: dependency)
-        let viewController = CalendarViewController(dateGenerator: component.dateGenerator)
-        let interactor = CalendarInteractor(presenter: viewController, dateGenerator: component.dateGenerator)
+        let viewController = CalendarViewController()
+        let interactor = CalendarInteractor(presenter: viewController, dateGenerator: dependency.dateGenerator)
         interactor.listener = listener
         
         return CalendarRouter(interactor: interactor,
