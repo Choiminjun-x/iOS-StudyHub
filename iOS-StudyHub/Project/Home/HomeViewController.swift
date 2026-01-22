@@ -6,13 +6,28 @@
 //
 
 import UIKit
+import Combine
 
-final class HomeViewController: UIViewController {
+protocol HomePresentableListener: AnyObject {
+    func requestPageInfo()
+
+//    func didTapRefreshButton()
+//    func didTapTodoItem(todo: Todo?)
+//    func didToggleTodo(id: Int)
+}
+
+final class HomeViewController: UIViewController, HomeViewControllable {
+    
+    var listener: HomePresentableListener?
+    
+    var viewController: UIViewController { return self }
     
     // MARK: View Event Handling
     
     private var viewEventLogic: HomeViewEventLogic { self.view as! HomeViewEventLogic }
     private var viewDisplayLogic: HomeViewDisplayLogic { self.view as! HomeViewDisplayLogic }
+    
+    private var cancellables = Set<AnyCancellable>()
     
     // MARK: instantiate
     
@@ -36,4 +51,11 @@ final class HomeViewController: UIViewController {
         super.viewDidLoad()
         
     }
+}
+
+
+// MARK: - Presentable
+
+extension HomeViewController: HomePresentable {
+
 }

@@ -12,6 +12,9 @@
 		3E3777BD2F20B3F8004384E2 /* AppRootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3777B72F20B3F8004384E2 /* AppRootInteractor.swift */; };
 		3E3777BE2F20B3F8004384E2 /* AppRootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3777B82F20B3F8004384E2 /* AppRootRouter.swift */; };
 		3E3777C02F20B4D3004384E2 /* AppComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3777BF2F20B4D3004384E2 /* AppComponent.swift */; };
+		3E4924712F220C11000DCADB /* HomeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4924702F220C11000DCADB /* HomeBuilder.swift */; };
+		3E4924732F220CB6000DCADB /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4924722F220CB6000DCADB /* HomeInteractor.swift */; };
+		3E4924752F220D16000DCADB /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4924742F220D16000DCADB /* HomeRouter.swift */; };
 		3EF2C1962F20665000B42472 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF2C1952F20665000B42472 /* MainTabBarController.swift */; };
 		3EF2C1992F207A7F00B42472 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF2C1982F207A7F00B42472 /* HomeViewController.swift */; };
 		3EF2C19B2F207A9E00B42472 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF2C19A2F207A9E00B42472 /* HomeView.swift */; };
@@ -68,6 +71,9 @@
 		3E3777B72F20B3F8004384E2 /* AppRootInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootInteractor.swift; sourceTree = "<group>"; };
 		3E3777B82F20B3F8004384E2 /* AppRootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootRouter.swift; sourceTree = "<group>"; };
 		3E3777BF2F20B4D3004384E2 /* AppComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppComponent.swift; sourceTree = "<group>"; };
+		3E4924702F220C11000DCADB /* HomeBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBuilder.swift; sourceTree = "<group>"; };
+		3E4924722F220CB6000DCADB /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		3E4924742F220D16000DCADB /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		3EF2C1952F20665000B42472 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		3EF2C1982F207A7F00B42472 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3EF2C19A2F207A9E00B42472 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -198,6 +204,9 @@
 			children = (
 				3EF2C19A2F207A9E00B42472 /* HomeView.swift */,
 				3EF2C1982F207A7F00B42472 /* HomeViewController.swift */,
+				3E4924702F220C11000DCADB /* HomeBuilder.swift */,
+				3E4924722F220CB6000DCADB /* HomeInteractor.swift */,
+				3E4924742F220D16000DCADB /* HomeRouter.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -626,6 +635,7 @@
 				3E3777BE2F20B3F8004384E2 /* AppRootRouter.swift in Sources */,
 				B0A5D90B2EAA56C300DDF505 /* +Sets.swift in Sources */,
 				3E3777C02F20B4D3004384E2 /* AppComponent.swift in Sources */,
+				3E4924712F220C11000DCADB /* HomeBuilder.swift in Sources */,
 				3EF2C19B2F207A9E00B42472 /* HomeView.swift in Sources */,
 				B0A5D90C2EAA56C300DDF505 /* UIImageView+Extension.swift in Sources */,
 				B09357992F1E444700E01BB7 /* ConcurrencyViewController.swift in Sources */,
@@ -642,8 +652,10 @@
 				B0A5D8F52EAA56B900DDF505 /* UIComponentsDemoView.swift in Sources */,
 				B0A5D8F62EAA56B900DDF505 /* UserProfileView.swift in Sources */,
 				B0A5D8F72EAA56B900DDF505 /* ImageCacheTestViewController.swift in Sources */,
+				3E4924752F220D16000DCADB /* HomeRouter.swift in Sources */,
 				B093579F2F1E463500E01BB7 /* ConcurrencyUserViewModel.swift in Sources */,
 				B0A5D8F92EAA56B900DDF505 /* HybridUserProfileViewController.swift in Sources */,
+				3E4924732F220CB6000DCADB /* HomeInteractor.swift in Sources */,
 				B0A5D8FA2EAA56B900DDF505 /* StudyMenuTableViewCell.swift in Sources */,
 				3EF2C1962F20665000B42472 /* MainTabBarController.swift in Sources */,
 				B0F423482D9C2597009AF119 /* AppDelegate.swift in Sources */,

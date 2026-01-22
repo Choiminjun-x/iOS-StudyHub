@@ -13,7 +13,7 @@ protocol AppRootDependency: Dependency {
     // created by this RIB.
 }
 
-final class AppRootComponent: Component<AppRootDependency>, CalendarDependency {
+final class AppRootComponent: Component<AppRootDependency>, HomeDependency, CalendarDependency {
     // Shared app-level dependencies
     let dateGenerator: DateGenerator = CalendarDateGenerator()
 }
@@ -35,10 +35,12 @@ final class AppRootBuilder: Builder<AppRootDependency>, AppRootBuildable {
         let tabBar = MainTabBarController()
         let interactor = AppRootInteractor(presenter: tabBar)
         
+        let home = HomeBuilder(dependency: component)
         let calendar = CalendarBuilder(dependency: component)
-    
+        
         let router = AppRootRouter(interactor: interactor,
                                    viewController: tabBar,
+                                   home: home,
                                    calendar: calendar)
         
         return router

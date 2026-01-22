@@ -45,7 +45,7 @@ final class HomeView: UIView, HomeViewEventLogic, HomeViewDisplayLogic {
     // MARK: MakeViewLayout
     
     private func makeViewLayout() {
-        self.backgroundColor = .white
+        self.backgroundColor = .brown
     }
     
     
